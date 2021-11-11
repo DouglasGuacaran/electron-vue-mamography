@@ -24,7 +24,7 @@
       <span>Para alla </span>
     </router-link>
 
-    <router-link to="home" tag="span">>Para alla span</router-link>
+    <router-link to="/" tag="span">>Para alla span</router-link>
 
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
