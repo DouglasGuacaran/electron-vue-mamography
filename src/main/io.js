@@ -1,6 +1,6 @@
 import { path } from 'path';
 import { fs } from 'fs-extra';
-import { os } from 'os';
+const os = require('os');
 import { open } from 'open';
 
 
