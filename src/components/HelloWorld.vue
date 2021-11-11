@@ -20,6 +20,12 @@
       <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
     </ul>
     <h3>Ecosystem</h3>
+    <router-link to="/about">
+      <span>Para alla </span>
+    </router-link>
+
+    <router-link to="home" tag="span">>Para alla span</router-link>
+
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
