@@ -1,8 +1,4 @@
-import { path } from 'path';
-import { fs } from 'fs-extra';
-const os = require('os');
 
-import { open } from 'open';
 const os = require('os');
 const fs = require('fs-extra');
 console.log(os.homedir());
