@@ -1,30 +1,9 @@
-import { path } from 'path';
-<<<<<<< HEAD
-import { fs } from 'fs-extra';
-const os = require('os');
-=======
-
->>>>>>> 7657b5eb16f0d503b53c24af7691fd5ed78f121e
-import { open } from 'open';
 const os = require('os');
 const fs = require('fs-extra');
 console.log(os.homedir());
 
 
-let data = {
-  id: 0,
-  name: 'Informe numero 1',
-  data: [
-    {
-      nombre: 'primer formulario',
-      campo1: 'data1',
-      campo2: 'data2',
-      campo3: 'data3',
-      campo4: 'data4',
-      campo5: 'data5'
-    }
-  ]
-};
+let data = {};
 
 
 // Hacmos check de que la carpeta exista y si no la creamos
@@ -43,11 +22,19 @@ if (!fs.existsSync(dataFolder + fileName)) {
 
 // Leer data
 console.log('aca');
+export var dataFile = '';
 if (fs.existsSync(dataFolder + fileName)) {
   console.log('read');
   let rawdata = fs.readFileSync(dataFolder + fileName);
-  let student = JSON.parse(rawdata);
-  console.log(student);
+  dataFile = JSON.parse(rawdata);
 }
 
 
+export const writeFile = (name, payload)  => {
+  let fileName = `/${name}`;
+
+  // Escribir data
+  if (!fs.existsSync(dataFolder + fileName)) {
+    fs.writeFileSync(dataFolder + fileName, JSON.stringify(payload))
+  }
+}

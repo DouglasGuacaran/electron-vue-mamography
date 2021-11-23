@@ -4,9 +4,20 @@ import { app, protocol, BrowserWindow, ipcMain, dialog } from 'electron'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer'
 // local dependencies
-import {path} from 'path';
 import * as io from './main/io'
+const path = require('path');
 
+
+
+
+console.log('data file');
+console.log(io.dataFile);
+
+function readConfig () {
+  return io.dataFile
+}
+
+//Mandar data leida en io.js a vue
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
@@ -25,9 +36,22 @@ async function createWindow() {
       // Use pluginOptions.nodeIntegration, leave this alone
       // See nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration for more info
       nodeIntegration: process.env.ELECTRON_NODE_INTEGRATION,
-      contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION
+      contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION,
+      enableRemoteModule: false,
+      // __static is set by webpack and will point to the public directory
+      preload: path.resolve(__static, 'preload.js'),
     }
   })
+
+  ipcMain.on('READ_FILE', (event, payload) => {
+    console.log('try to read FILE');
+    console.log(payload);
+    event.reply('READ_FILE', { algo: 'name' });
+
+    console.log('escrbiendo en archivo', payload.name);
+    console.log('lo siguiente', payload.content);
+    io.writeFile(payload.name, payload.content);
+  });
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode
@@ -36,7 +60,11 @@ async function createWindow() {
   } else {
     createProtocol('app')
     // Load the index.html when not in development
-    win.loadURL('app://./index.html')
+    win.loadURL('app://./index.html').then(() => {
+
+    })
+
+    win.webContents.send('asynchronous-message')
   }
 }
 
