@@ -14,9 +14,6 @@
   },
   "main": "background.js",
   "dependencies": {
-    "jquery": "^3.5.1",
-    "bootstrap": "^4.6.1",
-    "popper.js": "^1.16.1",
     "chokidar": "^3.5.2",
     "core-js": "^3.6.5",
     "drag-drop": "^7.2.0",
