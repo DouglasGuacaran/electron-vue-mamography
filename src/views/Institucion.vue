@@ -87,24 +87,16 @@
             </div>
           </form>
         </div>
-        <div class="col-6">
-          <div class="row">
-            <div class="col-3 m-4">
-              <br>
-              <br>
-              <br>
-              <button type="submit" class="btn btn-primary btn-sm">Guardar datos<span class="tooltiptext">Guarda todo el contenido</span></button>
-            </div>
 
+        <div class="row justify-content-center">
+          <div class="col-3 m-3">
+            <button type="submit" class="btn btn-primary btn-sm">Guardar datos</button>
           </div>
-            
+          <div class="col-3 m-3">
+            <button type="button" class="btn btn-outline-primary btn-sm" @click="$router.push('/')">Volver al inicio</button>
+          </div>
         </div>
       </div>
-
-        <div class="m-3">
-          <button type="button" class="btn btn-outline-primary btn-sm" @click="$router.push('/')">Volver al inicio<span class="tooltiptext">Acá va el mensaje</span></button>
-        </div>
-
   </div>
 </template>
 

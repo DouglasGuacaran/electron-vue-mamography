@@ -12,6 +12,21 @@ const routes = [
     component: () => import('../views/Institucion.vue')
   },
   {
+    path: '/unidad',
+    name: 'Unidad',
+    component: () => import('../views/Unidad.vue')
+  },
+  {
+    path: '/mecanicas',
+    name: 'Mecanicas',
+    component: () => import('../views/Mecanicas.vue')
+  },
+  {
+    path: '/geometricas',
+    name: 'Geometricas',
+    component: () => import('../views/Geometricas.vue')
+  },
+  {
     path: '/hoja2',
     name: 'Hoja2',
     component: () => import('../views/Hoja2.vue')

@@ -19,6 +19,9 @@
         <a class="nav-link" href="/mecanicas">Mecánicas</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="/geometricas">Geométricas</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="/dosimetricas">Dosimétricas</a>
       </li>
       <li class="nav-item">
