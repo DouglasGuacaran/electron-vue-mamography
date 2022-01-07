@@ -1,6 +1,6 @@
 <template>
   <div class="Institucion">
-    <h1>Inspección de Seguridad</h1>
+    <h3>III Inspección de Seguridad</h3>
       <div class="row">
         <div class="col-1"></div>
           <div class="col-5">

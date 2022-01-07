@@ -1,105 +1,57 @@
 <template>
   <div class="Institucion">
-    <h1>Inspección de Seguridad</h1>
+    <h3>IV Geometría</h3>
       <div class="row">
           <div class="col-5">
-            <h2>Geometría del campo luminoso</h2>
-            <hr>
-            <form method="get">
-              <div class="input-group mt-2">
-                <table class="table">
-                  <thead>
-                    <tr>
+              <div>
+                <table class='table'>
+                  <caption style="caption-side:top">Geometría del campo luminoso </caption>
+                    <thead>
                       <th>Pared del Tórax</th>
                       <th>Lado Derecho</th>
                       <th>Lado Izquierdo</th>
                       <th>Tolerancia</th>                
-                    </tr>             
-                  </thead>
-                  <tbody>
-                    <tr>
+                    </thead>             
+                    <tbody>
                       <td contenteditable='true'>0</td>
                       <td contenteditable='true'>0</td>
                       <td contenteditable='true'>0</td>
                       <th> 2%</th>
-                    </tr>
-                  </tbody>
+                    </tbody>
                 </table>
+                <div class="input-group m-2">
+                  <label class="m-1" for="formulario1">Conclusiones:</label>
+                  <input type="text" class="form-control" id="formularioInput8" required>
+                </div>
+              </div>
+
+            <form>
+              <div class="input-group mt-2">
                 <table class="table">
-                  <tbody>
+                  <caption style="caption-side:top">Simetría del sistema de compresión</caption>
+                    <thead>
                     <tr>
                       <th>Diferencia del Lado del tórax</th>
-                      <th contenteditable='true'>0</th>
-                      <th>Tolerancia</th>
-                      <th>Fuerza de Compresión</th>
-                    </tr>
-                    <tr>
                       <th>Diferencia del lado posterior</th>
-                      <th contenteditable='true'>0</th>
-                      <th contenteditable='true'>2%</th>
-                      <th>
-                        <tr>
-                          <th>Nominal</th>
-                          <th>Medido</th>
-                        </tr>
-                      </th>
+                      <th>Exactitud del espesor indicado</th>
+                      <th>Fuerza de Compresión</th>
+                      <th>Tolerancia</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     <tr>
-                      <th>Exactitud</th>
-                      <th contenteditable='true'>0</th>
+                      <td contenteditable='true'>0</td>
+                      <td contenteditable='true'>0</td>
+                      <td contenteditable='true'>0</td>
+                      <td contenteditable='true'>0</td> 
                       <th contenteditable='true'>2%</th>
-                      <th>
-                        <tr>
-                          <div class='col-5'><th contenteditable='true'>0</th></div>
-                          <div class='col-5'><th contenteditable='true'>0</th></div>
-                        </tr>
-                      </th>
-                    </tr>
-                  </tbody>
+                    </tr>                      
+                    </tbody>
                 </table>
-
-              </div>
-              <div class="input-group m-2">
-                <label class="m-1" for="formulario1">Ascendente:</label>
-                <input type="text" class="form-control" id="formulario1Input" required>
-              </div>
-              <div class="input-group m-2">
-                <label class="m-1" for="formulario1">Descendente:</label>
-                <input type="text" class="form-control" id="formulario1Input1" required>
-              </div>
-              <div class="input-group mt-2">
-                <label class="m-1" for="formulario1">Movimiento Rotatorio del Brazo:</label>
-              </div>
-              <div class="input-group m-2">
-                <label class="m-1" for="formulario1">Derecho:</label>
-                <input type="text" class="form-control" id="formulario1Input2" required>
-              </div>
-              <div class="input-group m-2">
-                <label class="m-1" for="formulario1">Izquierdo:</label>
-                <input type="text" class="form-control" id="formulario1Input3" required>
-              </div>
-              <div class="input-group mt-2">
-                <label class="m-1" for="formulario1">Movimiento de la paleta de compresión:</label>
-              </div>
-              <div class="input-group m-2">
-                <label class="m-1" for="formulario1">Ascendente:</label>
-                <input type="text" class="form-control" id="formulario1Input4" required>
-              </div>
-              <div class="input-group m-2">
-                <label class="m-1" for="formulario1">Descendente:</label>
-                <input type="text" class="form-control" id="formulario1Input5" required>
-              </div>
-              <div class="input-group m-2">
-                <label class="m-1" for="formulario1">Funcionamiento de pedales:</label>
-                <input type="text" class="form-control" id="formularioInput6" required>
-              </div>
-              <div class="input-group m-2">
-                <label class="m-1" for="formulario1">Botones para accionar los movimientos:</label>
-                <input type="text" class="form-control" id="formularioInput7" required>
-              </div>
-              <div class="input-group m-2">
-                <label class="m-1" for="formulario1">Funcionamiento del sistema de Aire Acondicionado:</label>
-                <input type="text" class="form-control" id="formularioInput8" required>
+                <div class="input-group m-2">
+                  <label class="m-1" for="formulario1">Conclusiones:</label>
+                  <input type="text" class="form-control" id="formularioInput8" required>
+                </div>
               </div>
             </form>
           </div>
@@ -258,4 +210,7 @@ export default {
   opacity: 1;
 }
 
+.celda {
+
+}
 </style>
