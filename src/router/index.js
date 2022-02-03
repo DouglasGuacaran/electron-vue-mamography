@@ -22,9 +22,39 @@ const routes = [
     component: () => import('../views/Mecanicas.vue')
   },
   {
-    path: '/geometricas',
-    name: 'Geometricas',
-    component: () => import('../views/Geometricas.vue')
+    path: '/geometria',
+    name: 'Geometria',
+    component: () => import('../views/Geometria.vue')
+  },
+  {
+    path: '/radiometria',
+    name: 'Radiometria',
+    component: () => import('../views/Radiometria.vue')
+  },
+  {
+    path: '/plano',
+    name: 'Plano',
+    component: () => import('../views/Plano.vue')
+  },
+  {
+    path: '/potencial',
+    name: 'Potencial',
+    component: () => import('../views/Potencial.vue')
+  },
+  {
+    path: '/dosimetricas',
+    name: 'Dosimetricas',
+    component: () => import('../views/Dosimetricas.vue')
+  },
+  {
+    path: '/calidadimagen',
+    name: 'CalidadImagen',
+    component: () => import('../views/CalidadImagen.vue')
+  },
+  {
+    path: '/informes',
+    name: 'Informes',
+    component: () => import('../views/Informes.vue')
   },
   {
     path: '/hoja2',

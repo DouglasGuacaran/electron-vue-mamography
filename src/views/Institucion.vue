@@ -1,6 +1,6 @@
 <template>
   <div class="Institucion">
-    <h3>I Datos Generales de la Institucion</h3>
+    <h3>Datos Generales de la Institucion</h3>
       <div class="row">
         <div class="col-1"></div>
           <div class="col-5">

@@ -1,6 +1,6 @@
 <template>
     <div class="Unidad">
-      <h3>II Características de la Unidad Mamográfica</h3>
+      <h3>Características de la Unidad Mamográfica</h3>
       <div class="row justify-content-lg-center">
           <div class="col-5">
             <h2>Mamógrafo</h2>

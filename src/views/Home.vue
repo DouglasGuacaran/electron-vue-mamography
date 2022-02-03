@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-
     <button @click="presionarBoton()">Boton de prueba</button>
   </div>
 </template>
@@ -26,7 +25,7 @@ export default {
       window.ipc.send('READ_FILE', payload);
     },
     presionarBoton() {
-      console.log('ejecutando preksionar boton');
+      console.log('ejecutando presionar boton');
       window.ipc.send('READ_FILE', {
         name: 'daglas.json',
         content: {
