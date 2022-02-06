@@ -1,13 +1,24 @@
 <template>
-  <h1>Hola</h1>
+  <div>
+    <h1>Hola</h1>
+    <chart-line></chart-line>
+  </div>
 </template>
 
 <script>
-export default {
+import ChartLine from '../components/ChartLine'
+  export default {
+    name: 'Dosimetricas',
+    components:{
+      ChartLine
+    },
+    data () {
+      return {
 
-}
+      }
+    },
+    mounted () {
+
+    }
+  }
 </script>
-
-<style>
-
-</style>
