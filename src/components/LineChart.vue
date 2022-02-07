@@ -2,7 +2,6 @@
     <div>
         Aca
     </div>
-    {{}}
     <div v-if="showGraph">
         <LineChart :chartData="data" :options="options" />
     </div>
@@ -27,8 +26,5 @@ export default  defineComponent({
 </script>
 
 <style>
-.small {
-    max-width: 600px;
-    margin:  150px auto;
-}
+
 </style>
