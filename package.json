@@ -14,6 +14,7 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@kurkle/color": "^0.1.9",
     "chart.js": "^3.7.0",
     "chokidar": "^3.5.2",
     "core-js": "^3.6.5",
@@ -21,7 +22,7 @@
     "fs-extra": "^10.0.0",
     "open": "^8.4.0",
     "vue": "^3.2.21",
-    "vue-chartjs": "^3.5.1",
+    "vue-chart-3": "^3.0.9",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
