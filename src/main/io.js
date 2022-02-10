@@ -24,7 +24,7 @@ if (!fs.existsSync(dataFolder + fileName)) {
 console.log('aca');
 export var dataFile = '';
 if (fs.existsSync(dataFolder + fileName)) {
-  console.log('read');
+  // console.log('read');
   let rawdata = fs.readFileSync(dataFolder + fileName);
   dataFile = JSON.parse(rawdata);
 }
